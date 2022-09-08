@@ -1,0 +1,38 @@
+.main__header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background: #f2f2f2;
+    padding: 14px 0;
+}
+.header__container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.header__logo{
+    width: 10%;
+
+}
+.header__logo img{
+    width: 100%;
+}
+.main__nav ul{
+    display: flex;
+}
+.main__nav ul li{
+    list-style: none;
+}
+.main__nav ul li a{
+    color: black;
+    margin: 10px;
+    text-decoration: none;
+}
+.cart i{
+    font-size: 34px;
+    color: #A94949;
+}
+
