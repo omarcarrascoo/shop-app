@@ -1,15 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import { FaBeer } from 'react-icons/fa';
+import NavBar from './components/NavBar'
+import ItemListContainer from './components/ItemListContainer';
 
 
 function App() {
+  const nombre = prompt ("Ingrese su nombre")
   return (
-    <div className="App">
-      <header className="App-header">
-        <h3> Lets go for a <FaBeer />? </h3>
-      </header>
-    </div>
+    <>
+    <NavBar />
+    <ItemListContainer nombre = {nombre} />
+    </>
+    
   );
 }
 

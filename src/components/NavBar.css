@@ -36,3 +36,12 @@
     color: #A94949;
 }
 
+
+.container{
+    color: #A94949;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

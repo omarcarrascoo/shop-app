@@ -1,6 +1,7 @@
-import { BsFillCartFill} from "react-icons/bs";
+
 import './NavBar.css'
 import Logo from '../assets/img/logo.png'
+import {CartWidget} from './CartWidget'
 
 function NavBar (){
     return(
@@ -17,9 +18,7 @@ function NavBar (){
                         <li><a href="#">Contactanos</a></li>
                     </ul>
                 </nav>
-                <div className="cart">
-                    <i><BsFillCartFill /></i>
-                </div>
+                <CartWidget />
             </div>
         </header>
     )
