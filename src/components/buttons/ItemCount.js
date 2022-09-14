@@ -17,6 +17,14 @@ const ItemCount = () =>{
             const btn = document.getElementById("less")
             btn.classList.remove("hide")
         }
+        let aux = (contador + 1)
+
+        if(aux == stock){
+            alert("Se ha acabado el stock")
+            const btnA = document.getElementById("more")
+            btnA.classList.add("hide")
+
+        }
     }
 
     const quitQ = () =>{
@@ -24,6 +32,13 @@ const ItemCount = () =>{
         if(contador==2){
             const btn = document.getElementById("less")
             btn.classList.add("hide")
+        }
+        let aux = (contador - 1)
+
+        if(aux < stock){
+            const btnA = document.getElementById("more")
+            btnA.classList.remove("hide")
+
         }
         
     }
@@ -43,7 +58,7 @@ const ItemCount = () =>{
                     <div className="card__options__container">
                         <button className="btn hide" id="less" onClick={quitQ}><BsDash /></button>
                         <p>{contador}</p>
-                        <button onClick={addQ}><BsPlusLg /></button>
+                        <button onClick={addQ} id="more" ><BsPlusLg /></button>
                         
                     </div>
                     <div className="card__addCart">
