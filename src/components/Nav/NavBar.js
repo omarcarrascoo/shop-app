@@ -1,7 +1,8 @@
 
 import './NavBar.css'
-import Logo from '../assets/img/logo.png'
-import {CartWidget} from './CartWidget'
+import Logo from '../../assets/img/logo.png'
+import {CartWidget} from '../Cart/CartWidget'
+
 
 function NavBar (){
     return(

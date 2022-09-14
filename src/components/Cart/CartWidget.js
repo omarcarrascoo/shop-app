@@ -1,5 +1,5 @@
 import { BsFillCartFill} from "react-icons/bs";
-import './NavBar.css'
+import '../Nav/NavBar.css'
 
 export const CartWidget = () =>{
     return (

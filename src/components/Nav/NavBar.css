@@ -38,10 +38,10 @@
 
 
 .container{
+    width: 90%;
+    margin: 200px auto;
     color: #A94949;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
