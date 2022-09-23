@@ -2,6 +2,7 @@
     width: 350px;
     background-color: #f4f4f4;
     padding: 20px 10px;
+    margin-bottom: 40px;
 }
 .cardContainer{
     width: 90%;
@@ -12,7 +13,7 @@
     flex-direction: column;
 }
 .cardImg{
-    width: 100%;
+    width: 60%;
 }
 .cardImg img{
     width: 100%;
@@ -25,8 +26,7 @@
 }
 .card__options__container{
     display: flex;
-    width: 80%;
-    margin: 0 auto;
+    width: 20%;
     justify-content: space-between;
 }
 .card__options__container button{
@@ -42,10 +42,9 @@
 }
 .card__addCart{
     width: 100%;
-    margin: 20px auto;
+    margin: 20px 0;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 .card__addCart button{
     background: #a94949;
@@ -56,4 +55,11 @@
 }
 .hide{
     visibility: hidden
+}
+
+.ItemList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }

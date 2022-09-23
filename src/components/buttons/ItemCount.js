@@ -1,5 +1,3 @@
-import './itemCount.css';
-import Producto from '../../assets/img/producto.png'
 import { BsPlusLg} from "react-icons/bs";
 import { BsDash} from "react-icons/bs";
 import React, {useState} from 'react'
@@ -44,16 +42,7 @@ const ItemCount = () =>{
     }
 
     return(
-        <div className="productCard">
-            <div className="cardContainer">
-                <div className="cardImg">
-                    <img src={Producto} alt="Imagen del producto"/>
-                </div>
-                <div className="cardName">
-                    <h3>Nombre del producto</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia, quas.</p>
-                </div>
-                <div className="cardOptions">
+        <div className="cardOptions">
                     <p>Seleccione la cantidad</p>
                     <div className="card__options__container">
                         <button className="btn hide" id="less" onClick={quitQ}><BsDash /></button>
@@ -65,8 +54,6 @@ const ItemCount = () =>{
                         <button>Agregar al carrito</button>
                     </div>
                 </div>
-            </div>
-        </div>
     )
 }
 export default ItemCount;
