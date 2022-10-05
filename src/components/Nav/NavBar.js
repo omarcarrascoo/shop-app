@@ -2,6 +2,7 @@
 import './NavBar.css'
 import Logo from '../../assets/img/logo.png'
 import {CartWidget} from '../Cart/CartWidget'
+import { Link } from 'react-router-dom'
 
 
 function NavBar (){
@@ -13,8 +14,8 @@ function NavBar (){
                 </div>
                 <nav className="main__nav">
                     <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Nosotros</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/item">About</Link></li>
                         <li><a href="#">Productos</a></li>
                         <li><a href="#">Contactanos</a></li>
                     </ul>

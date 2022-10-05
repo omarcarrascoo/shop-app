@@ -1,5 +1,7 @@
 
+import { Link } from "react-router-dom"
 import ItemCount from "../buttons/ItemCount"
+
 
 export const Item = ({product}) => {
     console.log(product)
@@ -13,7 +15,14 @@ export const Item = ({product}) => {
                     <h3>{product.title}</h3>
                     <p>{product.description}</p>
                 </div>
-                <ItemCount  />
+                <div className="btns__container">
+                    <div className="card__addCart">
+                            <button>Agregar al carrito</button>
+                    </div>
+                    <div className="card__addCart">
+                            <button><Link to="/item">Ver Mas</Link></button>
+                    </div>
+                </div>
             </div>
         </div>
     )

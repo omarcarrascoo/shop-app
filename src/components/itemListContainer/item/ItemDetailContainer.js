@@ -2,6 +2,7 @@ import { useEffect } from "react"
 import { useState } from "react"
 import './item.css'
 import ItemCount from "../../buttons/ItemCount"
+import { ItemDetail } from "./ItemDetail"
 
 
 export const ItemDetailCotainer = () =>{
@@ -11,7 +12,7 @@ export const ItemDetailCotainer = () =>{
     useEffect(() =>{
         const getItem = async () =>{
             try{
-                const respuesta = await fetch ('https://fakestoreapi.com/products/1');
+                const respuesta = await fetch ('https://fakestoreapi.com/products/2');
                 const data = await respuesta.json();
                 setProduct(data)
             } catch(error) {
@@ -23,20 +24,7 @@ export const ItemDetailCotainer = () =>{
         };
         getItem(product);
     })
-    console.log(product)
     return(
-        <div className="item">
-            <div className="item__container">
-                <div className="item__img">
-                    <img src={product.image} alt="imagen del producto" />
-                </div>
-                <div className="item__data">
-                    <h1>{product.title}</h1>
-                    <p className="price">{product.price}</p>
-                    <p>{product.description}</p>
-                    <ItemCount />
-                </div>
-            </div>
-        </div>
+       <ItemDetail product={product}></ItemDetail>
     )
 }
